@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+  link: string;
+}
+
+const { title, link } = Astro.props;
+---
+
+<a
+  class="spacing-x-4 md:spacing-x-0 flex flex-wrap justify-around px-4 py-5 sm:px-6"
+  href={link}
+  title={title}
+>
+  <slot />
+</a>

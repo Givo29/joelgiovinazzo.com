@@ -1,0 +1,167 @@
+---
+import {
+  Github,
+  X,
+  Linkedin,
+  Gmail,
+  Discord,
+  Typescript,
+  Astro as AstroIcon,
+  Nextdotjs,
+  Tailwindcss,
+  React,
+  Mysql,
+  Amazonaws,
+  Planetscale,
+  Vuedotjs,
+  Vercel,
+  Googleanalytics,
+  Python,
+  Googlecloud,
+  Neovim,
+  Lua,
+} from "simple-icons-astro";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Skill from "../components/Skill.astro";
+import Project from "../components/Project.astro";
+---
+
+<Layout title="Joel Giovinazzo">
+  <main class="h-screen text-[#13151a] lg:py-10">
+    <Card title="Joel Giovinazzo">
+      <p class="text-center text-lg font-light">
+        I am a DevOps Engineer in Australia that likes to play around with
+        emerging web tech and timeseries data. Currently working on <a
+          class="text-blue-600 hover:underline"
+          href="https://odinomics.com">Odinomics</a
+        >.
+      </p>
+    </Card>
+    <Card title="skills">
+      <Skill title="TypeScript" link="https://www.typescriptlang.org/">
+        <Typescript class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://www.python.org/" title="Python">
+        <Python class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://astro.build" title="Astro">
+        <AstroIcon class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://react.dev/" title="React">
+        <React class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://nextjs.org/" title="Next.js">
+        <Nextdotjs class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://tailwindcss.com" title="Tailwindcss">
+        <Tailwindcss class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://www.mysql.com/" title="MySQL">
+        <Mysql class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://planetscale.com" title="Planetscale">
+        <Planetscale class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://aws.amazon.com/" title="AWS">
+        <Amazonaws class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://cloud.google.com" title="Google Cloud">
+        <Googlecloud class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://github.com" title="Github">
+        <Github class="pointer-events-none" />
+      </Skill>
+      <Skill link="https://neovim.io/" title="Neovim">
+        <Neovim class="pointer-events-none" />
+      </Skill>
+    </Card>
+    <Card title="Projects">
+      <div class="flex w-full flex-col">
+        <p class="text-center text-lg font-light">
+          Some notable projects I have worked on:
+        </p>
+        <ul role="list" class="divide-y divide-gray-100">
+          <Project
+            name="Timesince"
+            description="A minimal web app made in Vue.js for easy calculations of time between two dates"
+            githubLink="https://github.com/Givo29/timesince"
+          >
+            <dd class="transition-all" title="Vue.js">
+              <Vuedotjs
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+            <dd title="Vercel" data-tooltip-placement="bottom">
+              <Vercel class="pointer-events-none h-6 w-6 bg-gray-50" />
+            </dd>
+            <dd title="Google Analytics" data-tooltip-placement="bottom">
+              <Googleanalytics class="pointer-events-none h-6 w-6 bg-gray-50" />
+            </dd>
+          </Project>
+          <Project
+            name="Google Drive File Audit"
+            description="A Python script to find and audit all files recursively within a Google Drive folder or shared drive"
+            githubLink="https://github.com/DeBortoliWines/gdrive-file-audit"
+          >
+            <dd title="Python">
+              <Python class="h-6 w-6 bg-gray-50" />
+            </dd>
+            <dd title="Google Cloud">
+              <Googlecloud class="h-6 w-6 bg-gray-50" />
+            </dd>
+          </Project>
+          <Project
+            name="Nvim"
+            description="A custom minimal-ish Neovim config written in Lua"
+            githubLink="https://github.com/givo29/nvim"
+          >
+            <dd title="Neovim">
+              <Neovim class="h-6 w-6 bg-gray-50" />
+            </dd>
+            <dd title="Lua">
+              <Lua class="h-6 w-6 bg-gray-50" />
+            </dd>
+          </Project>
+        </ul>
+      </div>
+    </Card>
+    <Card title="Links">
+      <a
+        class="transition-all hover:scale-125"
+        href="https://github.com/givo29"
+        title="@Givo29"
+      >
+        <Github class="pointer-events-none" />
+      </a>
+      <a
+        class="transition-all hover:scale-125"
+        href="https://twitter.com/Givo29"
+        title="@Givo29"
+      >
+        <X class="pointer-events-none" />
+      </a>
+      <a
+        class="transition-all hover:scale-125"
+        href="https://www.linkedin.com/in/joel-giovinazzo-9824961b5/"
+        title="Joel Giovinazzo"
+      >
+        <Linkedin class="pointer-events-none" />
+      </a>
+      <a
+        class="transition-all hover:scale-125"
+        href="mailto:joel@joelgiovinazzo.com"
+        title="joel@joelgiovinazzo.com"
+      >
+        <Gmail class="pointer-events-none" />
+      </a>
+      <a
+        class="transition-all hover:scale-125"
+        href="https://discord.com/users/403035425540931586"
+        title="MALEV0L3NT"
+      >
+        <Discord class="pointer-events-none" />
+      </a>
+    </Card>
+  </main>
+</Layout>
