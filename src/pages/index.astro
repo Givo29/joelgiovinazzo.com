@@ -23,7 +23,7 @@ import {
 } from "simple-icons-astro";
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import Skill from "../components/Skill.astro";
+import LinkIcon from "../components/LinkIcon.astro";
 import Project from "../components/Project.astro";
 ---
 
@@ -39,42 +39,42 @@ import Project from "../components/Project.astro";
       </p>
     </Card>
     <Card title="Skills">
-      <Skill title="TypeScript" link="https://www.typescriptlang.org/">
+      <LinkIcon title="TypeScript" link="https://www.typescriptlang.org/">
         <Typescript class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://www.python.org/" title="Python">
+      </LinkIcon>
+      <LinkIcon link="https://www.python.org/" title="Python">
         <Python class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://astro.build" title="Astro">
+      </LinkIcon>
+      <LinkIcon link="https://astro.build" title="Astro">
         <AstroIcon class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://react.dev/" title="React">
+      </LinkIcon>
+      <LinkIcon link="https://react.dev/" title="React">
         <React class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://nextjs.org/" title="Next.js">
+      </LinkIcon>
+      <LinkIcon link="https://nextjs.org/" title="Next.js">
         <Nextdotjs class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://tailwindcss.com" title="Tailwindcss">
+      </LinkIcon>
+      <LinkIcon link="https://tailwindcss.com" title="Tailwindcss">
         <Tailwindcss class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://www.mysql.com/" title="MySQL">
+      </LinkIcon>
+      <LinkIcon link="https://www.mysql.com/" title="MySQL">
         <Mysql class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://planetscale.com" title="Planetscale">
+      </LinkIcon>
+      <LinkIcon link="https://planetscale.com" title="Planetscale">
         <Planetscale class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://aws.amazon.com/" title="AWS">
+      </LinkIcon>
+      <LinkIcon link="https://aws.amazon.com/" title="AWS">
         <Amazonaws class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://cloud.google.com" title="Google Cloud">
+      </LinkIcon>
+      <LinkIcon link="https://cloud.google.com" title="Google Cloud">
         <Googlecloud class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://github.com" title="Github">
+      </LinkIcon>
+      <LinkIcon link="https://github.com" title="Github">
         <Github class="pointer-events-none" />
-      </Skill>
-      <Skill link="https://neovim.io/" title="Neovim">
+      </LinkIcon>
+      <LinkIcon link="https://neovim.io/" title="Neovim">
         <Neovim class="pointer-events-none" />
-      </Skill>
+      </LinkIcon>
     </Card>
     <Card title="Projects">
       <div class="flex w-full flex-col">
@@ -127,41 +127,30 @@ import Project from "../components/Project.astro";
       </div>
     </Card>
     <Card title="Links">
-      <a
-        class="transition-all hover:scale-125"
-        href="https://github.com/givo29"
-        title="@Givo29"
-      >
+      <LinkIcon title="@Givo29" link="https://github.com/givo29">
         <Github class="pointer-events-none" />
-      </a>
-      <a
-        class="transition-all hover:scale-125"
-        href="https://twitter.com/Givo29"
-        title="@Givo29"
-      >
+      </LinkIcon>
+      <LinkIcon title="@Givo29" link="https://twitter.com/Givo29">
         <X class="pointer-events-none" />
-      </a>
-      <a
-        class="transition-all hover:scale-125"
-        href="https://www.linkedin.com/in/joel-giovinazzo-9824961b5/"
+      </LinkIcon>
+      <LinkIcon
         title="Joel Giovinazzo"
+        link="https://www.linkedin.com/in/joel-giovinazzo-9824961b5/"
       >
         <Linkedin class="pointer-events-none" />
-      </a>
-      <a
-        class="transition-all hover:scale-125"
-        href="mailto:joel@joelgiovinazzo.com"
+      </LinkIcon>
+      <LinkIcon
         title="joel@joelgiovinazzo.com"
+        link="mailto:joel@joelgiovinazzo.com"
       >
         <Gmail class="pointer-events-none" />
-      </a>
-      <a
-        class="transition-all hover:scale-125"
-        href="https://discord.com/users/403035425540931586"
+      </LinkIcon>
+      <LinkIcon
         title="MALEV0L3NT"
+        link="https://discord.com/users/403035425540931586"
       >
         <Discord class="pointer-events-none" />
-      </a>
+      </LinkIcon>
     </Card>
   </main>
 </Layout>
