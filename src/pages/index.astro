@@ -83,6 +83,22 @@ import Project from "../components/Project.astro";
         </p>
         <ul role="list" class="divide-y divide-gray-100">
           <Project
+            name="joelgiovinazzo.com"
+            description="This website!"
+            githubLink="https://github.com/Givo29/joelgiovinazzo.com"
+          >
+            <dd class="transition-all" title="Astro">
+              <AstroIcon
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+            <dd class="transition-all" title="TailwindCSS">
+              <Tailwindcss
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+          </Project>
+          <Project
             name="Timesince"
             description="A minimal web app made in Vue.js for easy calculations of time between two dates"
             githubLink="https://github.com/Givo29/timesince"
