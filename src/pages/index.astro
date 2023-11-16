@@ -16,6 +16,9 @@ import {
   Amazonaws,
   Planetscale,
   Vuedotjs,
+  Openproject,
+  Ruby,
+  Rubyonrails,
   Vercel,
   Googleanalytics,
   Python,
@@ -87,11 +90,30 @@ import Project from "../components/Project.astro";
     <Card title="Projects">
       <div class="flex w-full flex-col">
         <p class="text-center text-lg font-light">
-          Some notable projects I have worked on:
+          Some notable projects I have contributed to:
         </p>
         <ul role="list" class="divide-y divide-gray-100">
           <Project
-            name="joelgiovinazzo.com"
+            name="OpenProject"
+            description="Added email integration for Gmail API, more secure than POP or IMAP"
+            githubLink="https://github.com/opf/openproject/pull/12094"
+          >
+            <dd title="Ruby">
+              <Ruby class="hover:none pointer-events-none h-6 w-6 bg-gray-50" />
+            </dd>
+            <dd title="Ruby On Rails">
+              <Rubyonrails
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+            <dd title="OpenProject">
+              <Openproject
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+          </Project>
+          <Project
+            name="Joelgiovinazzo.com"
             description="This website!"
             githubLink="https://github.com/Givo29/joelgiovinazzo.com"
           >
