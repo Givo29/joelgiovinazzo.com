@@ -91,6 +91,30 @@ import Project from "../components/Project.astro";
         </p>
         <ul role="list" class="divide-y divide-gray-100">
           <Project
+            name="Odinomics"
+            description="Co-Founder of Odinomics - A SaaS tool to help professionals forecast timeseries data"
+            githubLink="https://odinomics.com"
+          >
+            <dd title="NextJS">
+              <Nextdotjs
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+            <dd title="TRPC">
+              <Trpc class="hover:none pointer-events-none h-6 w-6 bg-gray-50" />
+            </dd>
+            <dd title="PlanetScale">
+              <Planetscale
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+            <dd title="AWS">
+              <Amazonaws
+                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
+              />
+            </dd>
+          </Project>
+          <Project
             name="OpenProject"
             description="Added email integration for Gmail API, more secure than POP or IMAP"
             githubLink="https://github.com/opf/openproject/pull/12094"
