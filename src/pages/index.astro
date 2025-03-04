@@ -1,6 +1,7 @@
 ---
 import {
   Github,
+  Go,
   X,
   Linkedin,
   Gmail,
@@ -36,11 +37,7 @@ import Project from "../components/Project.astro";
   <main class="h-screen text-[#13151a] lg:py-10">
     <Card title="Joel Giovinazzo">
       <p class="text-center text-lg font-light">
-        I am a DevOps Engineer in Australia that likes to play around with
-        emerging web tech and timeseries data. Currently working on <a
-          class="text-blue-600 hover:underline"
-          href="https://odinomics.com">Odinomics</a
-        >.
+        I am a DevOps Engineer in Australia that likes discovering emerging web tech, data engineering and solving problems.
       </p>
     </Card>
     <Card title="Skills">
@@ -91,25 +88,23 @@ import Project from "../components/Project.astro";
         </p>
         <ul role="list" class="divide-y divide-gray-100">
           <Project
-            name="Odinomics"
-            description="Co-Founder of Odinomics - A SaaS tool to help professionals forecast timeseries data"
-            githubLink="https://odinomics.com"
+            name="Tuidle"
+            description="TUI version of wordle built with Go"
+            githubLink="https://github.com/givo29/tuidle"
           >
-            <dd title="NextJS">
-              <Nextdotjs
+            <dd title="Golang">
+              <Go
                 class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
               />
             </dd>
-            <dd title="TRPC">
-              <Trpc class="hover:none pointer-events-none h-6 w-6 bg-gray-50" />
-            </dd>
-            <dd title="PlanetScale">
-              <Planetscale
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
-            </dd>
-            <dd title="AWS">
-              <Amazonaws
+          </Project>
+          <Project
+            name="Timediff"
+            description="Simple Go library for diffing datetime. Inspired by luxon.js"
+            githubLink="https://github.com/givo29/timediff"
+          >
+            <dd title="Golang">
+              <Go
                 class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
               />
             </dd>
