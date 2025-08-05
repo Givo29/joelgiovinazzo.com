@@ -26,30 +26,6 @@ const { title } = Astro.props;
   <body>
     <slot />
     <style is:global>
-      @font-face {
-        font-family: "Geist";
-        src: url(/fonts/Geist/Geist-Regular.woff2) format("woff2");
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: "Geist";
-        src: url(/fonts/Geist/Geist-SemiBold.woff2) format("woff2");
-        font-weight: semibold;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: "Geist";
-        src: url(/fonts/Geist/Geist-Bold.woff2) format("woff2");
-        font-weight: bold;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: "Geist";
-        src: url(/fonts/Geist/Geist-Light.woff2) format("woff2");
-        font-weight: light;
-        font-style: normal;
-      }
       :root {
         --accent: 136, 58, 234;
         --accent-light: 224, 204, 250;
@@ -62,7 +38,7 @@ const { title } = Astro.props;
         );
       }
       html {
-        font-family: "Geist", system-ui, sans-serif;
+        font-family: Tahoma, system-ui, sans-serif;
         font-weight: normal;
         background: #13151a;
         background-size: 224px;
