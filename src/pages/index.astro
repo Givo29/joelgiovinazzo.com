@@ -34,51 +34,65 @@ import Project from "../components/Project.astro";
 ---
 
 <Layout title="Joel Giovinazzo">
-  <main class="h-screen text-[#13151a] lg:py-10">
+  <main class="max-h-screen text-[#13151a]">
     <Card title="Joel Giovinazzo">
       <p class="text-center text-lg font-light">
-        I am a DevOps Engineer in Australia that likes discovering emerging web tech, data engineering and solving problems.
+        I am a DevOps Engineer in Australia that likes discovering emerging web
+        tech, data engineering and solving problems.
       </p>
     </Card>
     <Card title="Skills">
       <LinkIcon title="TypeScript" link="https://www.typescriptlang.org/">
-        <Typescript class="pointer-events-none" />
+        <Typescript class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill"> TypeScript</span>
       </LinkIcon>
       <LinkIcon link="https://www.python.org/" title="Python">
-        <Python class="pointer-events-none" />
+        <Python class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">Python</span>
       </LinkIcon>
       <LinkIcon link="https://astro.build" title="Astro">
-        <AstroIcon class="pointer-events-none" />
+        <AstroIcon class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">Astro</span>
       </LinkIcon>
       <LinkIcon link="https://react.dev/" title="React">
-        <React class="pointer-events-none" />
+        <React class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">React</span>
       </LinkIcon>
       <LinkIcon link="https://nextjs.org/" title="Next.js">
-        <Nextdotjs class="pointer-events-none" />
+        <Nextdotjs class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">Next.js</span>
       </LinkIcon>
       <LinkIcon link="https://tailwindcss.com" title="Tailwindcss">
-        <Tailwindcss class="pointer-events-none" />
+        <Tailwindcss class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">TailwindCSS</span>
       </LinkIcon>
       <LinkIcon link="https://trpc.io" title="tRPC">
-        <Trpc class="pointer-events-none" />
+        <Trpc class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">TRPC</span>
       </LinkIcon>
       <LinkIcon link="https://prisma.io" title="Prisma">
-        <Prisma class="pointer-events-none" />
+        <Prisma class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">Prisma</span>
       </LinkIcon>
       <LinkIcon link="https://www.mysql.com/" title="MySQL">
-        <Mysql class="pointer-events-none" />
+        <Mysql class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">MySQL</span>
       </LinkIcon>
       <LinkIcon link="https://planetscale.com" title="Planetscale">
-        <Planetscale class="pointer-events-none" />
+        <Planetscale class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">PlanetScale</span>
       </LinkIcon>
       <LinkIcon link="https://aws.amazon.com/" title="AWS">
-        <Amazonaws class="pointer-events-none" />
+        <Amazonaws class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">AWS</span>
       </LinkIcon>
       <LinkIcon link="https://cloud.google.com" title="Google Cloud">
-        <Googlecloud class="pointer-events-none" />
+        <Googlecloud class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">GCP</span>
       </LinkIcon>
       <LinkIcon link="https://github.com" title="Github">
-        <Github class="pointer-events-none" />
+        <Github class="h-7 w-7 transition-all hover:scale-125" />
+        <span class="icon-tooltip skill">GitHub</span>
       </LinkIcon>
     </Card>
     <Card title="Projects">
@@ -92,10 +106,11 @@ import Project from "../components/Project.astro";
             description="TUI version of wordle built with Go"
             githubLink="https://github.com/givo29/tuidle"
           >
-            <dd title="Golang">
-              <Go
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
+            >
+              <Go class="hover:none pointer-events-none h-7 w-7 bg-gray-50" />
+              <span class="icon-tooltip">Golang</span>
             </dd>
           </Project>
           <Project
@@ -103,10 +118,11 @@ import Project from "../components/Project.astro";
             description="Simple Go library for diffing datetime. Inspired by luxon.js"
             githubLink="https://github.com/givo29/timediff"
           >
-            <dd title="Golang">
-              <Go
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
+            >
+              <Go class="hover:none pointer-events-none h-7 w-7 bg-gray-50" />
+              <span class="icon-tooltip">Golang</span>
             </dd>
           </Project>
           <Project
@@ -114,18 +130,27 @@ import Project from "../components/Project.astro";
             description="Added email integration for Gmail API, more secure than POP or IMAP"
             githubLink="https://github.com/opf/openproject/pull/12094"
           >
-            <dd title="Ruby">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
+            >
               <Ruby class="hover:none pointer-events-none h-6 w-6 bg-gray-50" />
+              <span class="icon-tooltip">Ruby</span>
             </dd>
-            <dd title="Ruby On Rails">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Rubyonrails
                 class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
               />
+              <span class="icon-tooltip">Ruby On Rails</span>
             </dd>
-            <dd title="OpenProject">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
+            >
               <Openproject
                 class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
               />
+              <span class="icon-tooltip">OpenProject</span>
             </dd>
           </Project>
           <Project
@@ -133,15 +158,21 @@ import Project from "../components/Project.astro";
             description="This website!"
             githubLink="https://github.com/Givo29/joelgiovinazzo.com"
           >
-            <dd title="Astro">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <AstroIcon
                 class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
               />
+              <span class="icon-tooltip">Astro</span>
             </dd>
-            <dd title="TailwindCSS">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Tailwindcss
                 class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
               />
+              <span class="icon-tooltip">TailwindCSS</span>
             </dd>
           </Project>
           <Project
@@ -149,16 +180,26 @@ import Project from "../components/Project.astro";
             description="A minimal web app made in Vue.js for easy calculations of time between two dates"
             githubLink="https://github.com/Givo29/timesince"
           >
-            <dd title="Vue.js">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Vuedotjs
                 class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
               />
+              <span class="icon-tooltip">Vue.js</span>
             </dd>
-            <dd title="Vercel" data-tooltip-placement="bottom">
+            <!-- This is how tooltips should now be built -->
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Vercel class="pointer-events-none h-6 w-6 bg-gray-50" />
+              <span class="icon-tooltip">Vercel</span>
             </dd>
-            <dd title="Google Analytics" data-tooltip-placement="bottom">
-              <Googleanalytics class="pointer-events-none h-6 w-6 bg-gray-50" />
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
+              <Googleanalytics class="h-6 w-6 bg-gray-50" />
+              <span class="icon-tooltip">Google Analytics</span>
             </dd>
           </Project>
           <Project
@@ -166,11 +207,17 @@ import Project from "../components/Project.astro";
             description="A Python script to find and audit all files recursively within a Google Drive folder or shared drive"
             githubLink="https://github.com/DeBortoliWines/gdrive-file-audit"
           >
-            <dd title="Python">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Python class="h-6 w-6 bg-gray-50" />
+              <span class="icon-tooltip">Python</span>
             </dd>
-            <dd title="Google Cloud">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Googlecloud class="h-6 w-6 bg-gray-50" />
+              <span class="icon-tooltip">Google Cloud Platform</span>
             </dd>
           </Project>
           <Project
@@ -178,11 +225,17 @@ import Project from "../components/Project.astro";
             description="A custom minimal-ish Neovim config written in Lua"
             githubLink="https://github.com/givo29/nvim"
           >
-            <dd title="Neovim">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Neovim class="h-6 w-6 bg-gray-50" />
+              <span class="icon-tooltip">NeoVim</span>
             </dd>
-            <dd title="Lua">
+            <dd
+              class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
+            >
               <Lua class="h-6 w-6 bg-gray-50" />
+              <span class="icon-tooltip">Lua</span>
             </dd>
           </Project>
         </ul>
@@ -190,28 +243,28 @@ import Project from "../components/Project.astro";
     </Card>
     <Card title="Links">
       <LinkIcon title="@Givo29" link="https://github.com/givo29">
-        <Github class="pointer-events-none" />
+        <Github class="transition-all hover:scale-125" />
       </LinkIcon>
       <LinkIcon title="@Givo29" link="https://twitter.com/Givo29">
-        <X class="pointer-events-none" />
+        <X class="transition-all hover:scale-125" />
       </LinkIcon>
       <LinkIcon
         title="Joel Giovinazzo"
         link="https://www.linkedin.com/in/joel-giovinazzo-9824961b5/"
       >
-        <Linkedin class="pointer-events-none" />
+        <Linkedin class="transition-all hover:scale-125" />
       </LinkIcon>
       <LinkIcon
         title="joel@joelgiovinazzo.com"
         link="mailto:joel@joelgiovinazzo.com"
       >
-        <Gmail class="pointer-events-none" />
+        <Gmail class="transition-all hover:scale-125" />
       </LinkIcon>
       <LinkIcon
         title="MALEV0L3NT"
         link="https://discord.com/users/403035425540931586"
       >
-        <Discord class="pointer-events-none" />
+        <Discord class="transition-all hover:scale-125" />
       </LinkIcon>
     </Card>
   </main>

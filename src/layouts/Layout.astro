@@ -1,5 +1,4 @@
 ---
-import { Tooltips } from "astro-tooltips";
 interface Props {
   title: string;
 }
@@ -16,43 +15,65 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <Tooltips
-      interactive={false}
-      delay={[15, 15]}
-      theme="translucent"
-      placement="bottom"
-    />
   </head>
   <body>
     <slot />
     <style is:global>
-      :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-          45deg,
-          rgb(var(--accent)),
-          rgb(var(--accent-light)) 30%,
-          white 60%
-        );
-      }
       html {
         font-family: Tahoma, system-ui, sans-serif;
-        font-weight: normal;
         background: #13151a;
-        background-size: 224px;
       }
-      code {
-        font-family:
-          Menlo,
-          Monaco,
-          Lucida Console,
-          Liberation Mono,
-          DejaVu Sans Mono,
-          Bitstream Vera Sans Mono,
-          Courier New,
-          monospace;
+
+      .icon {
+        position: absolute;
+        top: 0.5rem;
+        display: none;
+        transform: translate(0, 100%) rotate(0) skewX(0) skewY(0) scaleX(1)
+          scaleY(1);
+        white-space: nowrap;
+        border-radius: 0.5rem;
+        background-color: rgb(55, 65, 81);
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgb(255, 255, 255);
+      }
+      .icon-tooltip {
+        position: absolute;
+        top: 8px;
+        transform: translateY(100%);
+        display: none;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 0.875rem;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background-color: rgb(55, 65, 81);
+        border-radius: 0.5rem;
+      }
+
+      .group:hover .icon-tooltip {
+        display: flex;
+      }
+
+      .icon-tooltip::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        /* This positions the arrow at the bottom of the tooltip, pointing up */
+        bottom: 100%;
+        transform: translateX(-50%); /* Equivalent to -translate-x-1/2 */
+        border-width: 8px; /* Equivalent to border-8 */
+        border-color: transparent transparent rgb(55, 65, 81) transparent; /* bg-gray-700 is #4A5568 */
+        border-style: solid;
+      }
+      .skill {
+        top: 1rem;
       }
     </style>
   </body>
