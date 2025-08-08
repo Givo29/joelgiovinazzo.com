@@ -1,32 +1,4 @@
 ---
-import {
-  Github,
-  Go,
-  X,
-  Linkedin,
-  Gmail,
-  Discord,
-  Typescript,
-  Astro as AstroIcon,
-  Nextdotjs,
-  Tailwindcss,
-  React,
-  Trpc,
-  Prisma,
-  Mysql,
-  Amazonaws,
-  Planetscale,
-  Vuedotjs,
-  Openproject,
-  Ruby,
-  Rubyonrails,
-  Vercel,
-  Googleanalytics,
-  Python,
-  Googlecloud,
-  Neovim,
-  Lua,
-} from "simple-icons-astro";
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import LinkIcon from "../components/LinkIcon.astro";
@@ -43,55 +15,83 @@ import Project from "../components/Project.astro";
     </Card>
     <Card title="Skills">
       <LinkIcon title="TypeScript" link="https://www.typescriptlang.org/">
-        <Typescript class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#typescript"></use>
+        </svg>
+
         <span class="icon-tooltip skill"> TypeScript</span>
       </LinkIcon>
       <LinkIcon link="https://www.python.org/" title="Python">
-        <Python class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#python"></use>
+        </svg>
+
         <span class="icon-tooltip skill">Python</span>
       </LinkIcon>
       <LinkIcon link="https://astro.build" title="Astro">
-        <AstroIcon class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#astro"></use>
+        </svg>
         <span class="icon-tooltip skill">Astro</span>
       </LinkIcon>
       <LinkIcon link="https://react.dev/" title="React">
-        <React class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#reactjs"></use>
+        </svg>
         <span class="icon-tooltip skill">React</span>
       </LinkIcon>
       <LinkIcon link="https://nextjs.org/" title="Next.js">
-        <Nextdotjs class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#nextjs"></use>
+        </svg>
         <span class="icon-tooltip skill">Next.js</span>
       </LinkIcon>
       <LinkIcon link="https://tailwindcss.com" title="Tailwindcss">
-        <Tailwindcss class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#tailwindcss"></use>
+        </svg>
         <span class="icon-tooltip skill">TailwindCSS</span>
       </LinkIcon>
       <LinkIcon link="https://trpc.io" title="tRPC">
-        <Trpc class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#trpc"></use>
+        </svg>
         <span class="icon-tooltip skill">TRPC</span>
       </LinkIcon>
       <LinkIcon link="https://prisma.io" title="Prisma">
-        <Prisma class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#prisma"></use>
+        </svg>
         <span class="icon-tooltip skill">Prisma</span>
       </LinkIcon>
       <LinkIcon link="https://www.mysql.com/" title="MySQL">
-        <Mysql class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#mysql"></use>
+        </svg>
         <span class="icon-tooltip skill">MySQL</span>
       </LinkIcon>
       <LinkIcon link="https://planetscale.com" title="Planetscale">
-        <Planetscale class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#planetscale"></use>
+        </svg>
         <span class="icon-tooltip skill">PlanetScale</span>
       </LinkIcon>
       <LinkIcon link="https://aws.amazon.com/" title="AWS">
-        <Amazonaws class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#aws"></use>
+        </svg>
         <span class="icon-tooltip skill">AWS</span>
       </LinkIcon>
       <LinkIcon link="https://cloud.google.com" title="Google Cloud">
-        <Googlecloud class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#gcp"></use>
+        </svg>
         <span class="icon-tooltip skill">GCP</span>
       </LinkIcon>
       <LinkIcon link="https://github.com" title="Github">
-        <Github class="h-7 w-7 transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#github"></use>
+        </svg>
         <span class="icon-tooltip skill">GitHub</span>
       </LinkIcon>
     </Card>
@@ -109,7 +109,9 @@ import Project from "../components/Project.astro";
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
             >
-              <Go class="hover:none pointer-events-none h-7 w-7 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#go"></use>
+              </svg>
               <span class="icon-tooltip">Golang</span>
             </dd>
           </Project>
@@ -121,7 +123,9 @@ import Project from "../components/Project.astro";
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
             >
-              <Go class="hover:none pointer-events-none h-7 w-7 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#go"></use>
+              </svg>
               <span class="icon-tooltip">Golang</span>
             </dd>
           </Project>
@@ -133,23 +137,25 @@ import Project from "../components/Project.astro";
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
             >
-              <Ruby class="hover:none pointer-events-none h-6 w-6 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#ruby"></use>
+              </svg>
               <span class="icon-tooltip">Ruby</span>
             </dd>
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Rubyonrails
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#rails"></use>
+              </svg>
               <span class="icon-tooltip">Ruby On Rails</span>
             </dd>
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-center sm:mx-2"
             >
-              <Openproject
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#openproject"></use>
+              </svg>
               <span class="icon-tooltip">OpenProject</span>
             </dd>
           </Project>
@@ -161,17 +167,17 @@ import Project from "../components/Project.astro";
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <AstroIcon
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#astro"></use>
+              </svg>
               <span class="icon-tooltip">Astro</span>
             </dd>
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Tailwindcss
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#tailwindcss"></use>
+              </svg>
               <span class="icon-tooltip">TailwindCSS</span>
             </dd>
           </Project>
@@ -183,22 +189,26 @@ import Project from "../components/Project.astro";
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Vuedotjs
-                class="hover:none pointer-events-none h-6 w-6 bg-gray-50"
-              />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#vue"></use>
+              </svg>
               <span class="icon-tooltip">Vue.js</span>
             </dd>
             <!-- This is how tooltips should now be built -->
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Vercel class="pointer-events-none h-6 w-6 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#vercel"></use>
+              </svg>
               <span class="icon-tooltip">Vercel</span>
             </dd>
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Googleanalytics class="h-6 w-6 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#googleanalytics"></use>
+              </svg>
               <span class="icon-tooltip">Google Analytics</span>
             </dd>
           </Project>
@@ -210,13 +220,17 @@ import Project from "../components/Project.astro";
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Python class="h-6 w-6 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#python"></use>
+              </svg>
               <span class="icon-tooltip">Python</span>
             </dd>
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Googlecloud class="h-6 w-6 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#gcp"></use>
+              </svg>
               <span class="icon-tooltip">Google Cloud Platform</span>
             </dd>
           </Project>
@@ -228,13 +242,17 @@ import Project from "../components/Project.astro";
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Neovim class="h-6 w-6 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#neovim"></use>
+              </svg>
               <span class="icon-tooltip">NeoVim</span>
             </dd>
             <dd
               class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-nowrap justify-around sm:mx-2"
             >
-              <Lua class="h-6 w-6 bg-gray-50" />
+              <svg class="hover:none pointer-events-none h-7 w-7 bg-gray-50">
+                <use href="/icons.svg#lua"></use>
+              </svg>
               <span class="icon-tooltip">Lua</span>
             </dd>
           </Project>
@@ -243,28 +261,38 @@ import Project from "../components/Project.astro";
     </Card>
     <Card title="Links">
       <LinkIcon title="@Givo29" link="https://github.com/givo29">
-        <Github class="transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#github"></use>
+        </svg>
       </LinkIcon>
       <LinkIcon title="@Givo29" link="https://twitter.com/Givo29">
-        <X class="transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#x"></use>
+        </svg>
       </LinkIcon>
       <LinkIcon
         title="Joel Giovinazzo"
         link="https://www.linkedin.com/in/joel-giovinazzo-9824961b5/"
       >
-        <Linkedin class="transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#linkedin"></use>
+        </svg>
       </LinkIcon>
       <LinkIcon
         title="joel@joelgiovinazzo.com"
         link="mailto:joel@joelgiovinazzo.com"
       >
-        <Gmail class="transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#gmail"></use>
+        </svg>
       </LinkIcon>
       <LinkIcon
         title="MALEV0L3NT"
         link="https://discord.com/users/403035425540931586"
       >
-        <Discord class="transition-all hover:scale-125" />
+        <svg class="h-7 w-7 transition-all hover:scale-125">
+          <use href="/icons.svg#discord"></use>
+        </svg>
       </LinkIcon>
     </Card>
   </main>
