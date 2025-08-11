@@ -24,23 +24,6 @@ const { title } = Astro.props;
         background: #13151a;
       }
 
-      .icon {
-        position: absolute;
-        top: 0.5rem;
-        display: none;
-        transform: translate(0, 100%) rotate(0) skewX(0) skewY(0) scaleX(1)
-          scaleY(1);
-        white-space: nowrap;
-        border-radius: 0.5rem;
-        background-color: rgb(55, 65, 81);
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        color: rgb(255, 255, 255);
-      }
       .icon-tooltip {
         position: absolute;
         top: 8px;
@@ -49,10 +32,7 @@ const { title } = Astro.props;
         white-space: nowrap;
         color: #fff;
         font-size: 0.875rem;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding: 4px 8px 4px 8px;
         background-color: rgb(55, 65, 81);
         border-radius: 0.5rem;
       }
@@ -65,15 +45,10 @@ const { title } = Astro.props;
         content: "";
         position: absolute;
         left: 50%;
-        /* This positions the arrow at the bottom of the tooltip, pointing up */
         bottom: 100%;
-        transform: translateX(-50%); /* Equivalent to -translate-x-1/2 */
-        border-width: 8px; /* Equivalent to border-8 */
-        border-color: transparent transparent rgb(55, 65, 81) transparent; /* bg-gray-700 is #4A5568 */
-        border-style: solid;
-      }
-      .skill {
-        top: 1rem;
+        transform: translateX(-50%);
+        border-width: 8px;
+        border-color: transparent transparent rgb(55, 65, 81) transparent;
       }
     </style>
   </body>

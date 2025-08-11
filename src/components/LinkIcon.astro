@@ -1,16 +1,11 @@
 ---
 interface Props {
-  title: string;
   link: string;
 }
 
-const { title, link } = Astro.props;
+const { link } = Astro.props;
 ---
 
-<a
-  class="group relative spacing-x-3 md:spacing-x-0 mx-4 my-5 flex flex-wrap justify-around transition-all sm:mx-2"
-  href={link}
-  title={title}
->
+<a class="group relative mx-4 my-5 flex flex-wrap justify-around" href={link}>
   <slot />
 </a>
