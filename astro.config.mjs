@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   integrations: [],
   build: {
-      inlineStylesheets: "always"
+    inlineStylesheets: "always",
   },
 
   vite: {

@@ -1,11 +1,10 @@
 ---
 interface Props {
   name: string;
-  description: string;
   githubLink: string;
 }
 
-const { name, description, githubLink } = Astro.props;
+const { name, githubLink } = Astro.props;
 ---
 
 <li
@@ -17,7 +16,7 @@ const { name, description, githubLink } = Astro.props;
     </p>
     <div class="flex text-xs text-gray-500">
       <p>
-        {description}
+        <slot name="desc" />
       </p>
     </div>
   </div>

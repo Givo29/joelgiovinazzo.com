@@ -101,11 +101,8 @@ import Project from "../components/Project.astro";
           Some notable projects I have contributed to:
         </p>
         <ul role="list" class="divide-y divide-gray-100">
-          <Project
-            name="Tuidle"
-            description="TUI version of wordle built with Go"
-            githubLink="https://github.com/givo29/tuidle"
-          >
+          <Project name="Tuidle" githubLink="https://github.com/givo29/tuidle">
+            <p slot="desc">TUI version of wordle built with Go</p>
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#go"></use>
@@ -115,9 +112,11 @@ import Project from "../components/Project.astro";
           </Project>
           <Project
             name="Timediff"
-            description="Simple Go library for diffing datetime. Inspired by luxon.js"
             githubLink="https://github.com/givo29/timediff"
           >
+            <p slot="desc">
+              Simple Go library for diffing datetime. Inspired by luxon.js
+            </p>
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#go"></use>
@@ -127,9 +126,12 @@ import Project from "../components/Project.astro";
           </Project>
           <Project
             name="OpenProject"
-            description="Added email integration for Gmail API, more secure than POP or IMAP"
             githubLink="https://github.com/opf/openproject/pull/12094"
           >
+            <p slot="desc">
+              Added email integration for Gmail API, more secure than POP or
+              IMAP
+            </p>
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#ruby"></use>
@@ -151,9 +153,16 @@ import Project from "../components/Project.astro";
           </Project>
           <Project
             name="Joelgiovinazzo.com"
-            description="This website!"
             githubLink="https://github.com/Givo29/joelgiovinazzo.com"
           >
+            <p slot="desc">
+              This website! Note: Inspired by <a
+                class="text-blue-600 font-bold hover:underline"
+                href="https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/"
+                target="_blank">this article</a
+              >, this site is just 6kb gzipped, meaning it can be loaded in a
+              single TCP roundtrip!
+            </p>
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#astro"></use>
@@ -169,16 +178,18 @@ import Project from "../components/Project.astro";
           </Project>
           <Project
             name="Timesince"
-            description="A minimal web app made in Vue.js for easy calculations of time between two dates"
             githubLink="https://github.com/Givo29/timesince"
           >
+            <p slot="desc">
+              A minimal web app made in Vue.js for easy calculations of time
+              between two dates
+            </p>
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#vue"></use>
               </svg>
               <span class="icon-tooltip">Vue.js</span>
             </dd>
-            <!-- This is how tooltips should now be built -->
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#vercel"></use>
@@ -194,9 +205,12 @@ import Project from "../components/Project.astro";
           </Project>
           <Project
             name="Google Drive File Audit"
-            description="A Python script to find and audit all files recursively within a Google Drive folder or shared drive"
             githubLink="https://github.com/DeBortoliWines/gdrive-file-audit"
           >
+            <p slot="desc">
+              A Python script to find and audit all files recursively within a
+              Google Drive folder or shared drive
+            </p>
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#python"></use>
@@ -210,11 +224,8 @@ import Project from "../components/Project.astro";
               <span class="icon-tooltip">Google Cloud Platform</span>
             </dd>
           </Project>
-          <Project
-            name="Nvim"
-            description="A custom minimal-ish Neovim config written in Lua"
-            githubLink="https://github.com/givo29/nvim"
-          >
+          <Project name="Nvim" githubLink="https://github.com/givo29/nvim">
+            <p slot="desc">A custom minimal-ish Neovim config written in Lua</p>
             <dd class="group relative my-5 flex justify-around sm:mx-2">
               <svg class="hover:none pointer-events-none h-7 w-7">
                 <use href="/icons.svg#neovim"></use>
