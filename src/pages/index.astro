@@ -101,6 +101,21 @@ import Project from "../components/Project.astro";
           Some notable projects I have contributed to:
         </p>
         <ul role="list" class="divide-y divide-gray-100">
+            <Project name="Kite-Invoicing" githubLink="https://kite-invoicing.com">
+            <p slot="desc">A lightweight invoicing platform for Australian freelancers that replaces tedious bookkeeping bloat with instant, precise billing.</p>
+            <dd class="group relative mt-5 sm:my-3 flex justify-around">
+              <svg class="hover:none pointer-events-none h-7 w-7">
+                <use href="/icons.svg#nextjs"></use>
+              </svg>
+              <span class="icon-tooltip">Next.js</span>
+            </dd>
+            <dd class="group relative mt-5 sm:my-3 flex justify-around">
+              <svg class="hover:none pointer-events-none h-7 w-7">
+                <use href="/icons.svg#convex"></use>
+              </svg>
+              <span class="icon-tooltip">Convex</span>
+            </dd>
+          </Project>
           <Project name="Tuidle" githubLink="https://github.com/givo29/tuidle">
             <p slot="desc">TUI version of wordle built with Go</p>
             <dd class="group relative mt-5 sm:my-3 flex justify-around">
