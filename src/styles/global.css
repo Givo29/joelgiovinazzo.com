@@ -1,1 +1,261 @@
-@import "tailwindcss";
+/* Reset: the parts of Tailwind's preflight this site relies on */
+*,
+:after {
+  box-sizing: border-box;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colours live in custom properties because the minifier converts oklch()
+   to hex, which is less saturated on wide-gamut displays. */
+:root {
+  --blue: oklch(54.6% 0.245 262.881);
+  --gray-100: oklch(96.7% 0.003 264.542);
+  --gray-200: oklch(92.8% 0.006 264.531);
+  --gray-500: oklch(55.1% 0.027 264.364);
+}
+
+html {
+  font-family: Tahoma, system-ui, sans-serif;
+  line-height: 1.5;
+  tab-size: 4;
+  background: #13151a;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+main {
+  max-height: 100vh;
+  color: #13151a;
+}
+
+.lead {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: calc(1.75 / 1.125);
+  font-weight: 300;
+}
+
+.link {
+  color: var(--blue);
+}
+
+/* Card */
+.card {
+  width: 100%;
+  margin-inline: auto;
+  padding: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-box {
+  width: 100%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.card-box > :first-child {
+  margin-inline-end: 0.75rem;
+  border-bottom-width: 1px;
+  border-color: var(--gray-200);
+}
+
+.card-title {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: calc(2 / 1.5);
+  font-weight: 700;
+}
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.25rem 1rem;
+}
+
+/* Icons */
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.icon-link {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1.25rem 1rem;
+}
+
+.icon-link .icon {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-tooltip {
+  position: absolute;
+  top: 8px;
+  transform: translateY(100%);
+  display: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  background-color: #374151;
+  border-radius: 0.5rem;
+}
+
+:hover > .icon-tooltip {
+  display: flex;
+}
+
+.icon-tooltip:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-color: transparent transparent #374151 transparent;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projects li:not(:last-child) {
+  border-bottom-width: 1px;
+  border-color: var(--gray-100);
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+  padding-block: 1.25rem;
+}
+
+.project-name {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  display: flex;
+  font-size: 0.75rem;
+  line-height: calc(1 / 0.75);
+  color: var(--gray-500);
+}
+
+.project-desc a {
+  font-weight: 700;
+}
+
+.project-stack {
+  display: flex;
+  width: 100%;
+}
+
+.project-stack > :not(:last-child) {
+  margin-inline-end: 0.25rem;
+}
+
+.tech {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.25rem;
+}
+
+.tech .icon {
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .icon-link .icon:hover {
+    scale: 1.25;
+  }
+
+  .link:hover {
+    text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 40rem) {
+  .card {
+    max-width: 40rem;
+  }
+
+  .card-title,
+  .card-body {
+    padding-inline: 1.5rem;
+  }
+
+  .project {
+    flex-wrap: nowrap;
+  }
+
+  .project-stack {
+    width: auto;
+  }
+
+  .tech {
+    margin-block: 0.75rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .card {
+    max-width: 48rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .card {
+    max-width: 64rem;
+  }
+
+  .card-box {
+    max-width: 66%;
+  }
+}
+
+@media (min-width: 80rem) {
+  .card {
+    max-width: 80rem;
+  }
+}
+
+@media (min-width: 96rem) {
+  .card {
+    max-width: 96rem;
+  }
+}
