@@ -13,7 +13,10 @@ for (const file of readdirSync(dir)) {
 
   if (svg.includes('viewBox="0 0 24 24"')) {
     svg = svg
-      .replace('viewBox="0 0 24 24">', 'viewBox="0 0 120 120"><g transform="scale(5)">')
+      .replace(
+        'viewBox="0 0 24 24">',
+        'viewBox="0 0 120 120"><g transform="scale(5)">',
+      )
       .replace(/<\/svg>\s*$/, "</g></svg>");
   }
 

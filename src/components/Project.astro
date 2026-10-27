@@ -7,20 +7,18 @@ interface Props {
 const { name, githubLink } = Astro.props;
 ---
 
-<li
-  class="flex flex-wrap items-center justify-between gap-x-6 py-5 sm:flex-nowrap"
->
+<li class="project">
   <div>
-    <p class="text-sm font-semibold leading-6">
-      <a href={githubLink} class="text-blue-600 hover:underline">{name}</a>
+    <p class="project-name">
+      <a href={githubLink} class="link">{name}</a>
     </p>
-    <div class="flex text-xs text-gray-500">
+    <div class="project-desc">
       <p>
         <slot name="desc" />
       </p>
     </div>
   </div>
-  <dl class="flex space-x-1 w-full sm:w-auto">
+  <dl class="project-stack">
     <slot />
   </dl>
 </li>
